@@ -12,3 +12,16 @@ function pairs(arr){
 }
 let arr=[1,2,3];
 pairs(arr);
+2 and quesrtion //
+const maksanagram=(str)=>{
+    const map=new Map();
+    const groups=[];
+    for(const strs of str){
+        const key=strs.split(' ').sort().join('');
+        if(map.has(key))map.set(key,[...map.get(key),strs])
+        else map.set(key,(strs))
+
+    }
+    map.forEach((group)=>groups.push(group))
+    return groups;
+}
