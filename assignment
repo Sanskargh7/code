@@ -1,0 +1,14 @@
+function pairs(arr){
+    let count=0;
+    for(let i=0;i<arr.length-1;i++){
+        for(j=i;j<arr.length;j++){
+            if(arr[i]==arr[j])
+            count++;
+            else
+            console.log('no pairs possible')
+        }
+    }
+    return count;
+}
+let arr=[1,2,3];
+pairs(arr);
